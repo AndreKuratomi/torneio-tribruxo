@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import { useEffect } from "react";
+
+import Inicio from "./components/Inicio";
+// import Oponentes from "./components/Oponentes";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const Login = () => {
+    setIsLoggedIn(false);
+  };
+
+  const Logout = () => {
+    setIsLoggedIn(true);
+  };
+
+  const [bruxinhos, setBruxinhos] = useState([]);
+  useEffect(() => {
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
+      .then((response) => response.json())
+      .then((response) => setBruxinhos(response))
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        <Inicio
+          bruxinhos={bruxinhos}
+          isLoggedIn={isLoggedIn}
+          Login={Login}
+          Logout={Logout}
+        />
+      </div>
     </div>
   );
 }

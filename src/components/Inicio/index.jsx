@@ -1,0 +1,21 @@
+import "./../styles.css";
+import Oponentes from "./../Oponentes";
+
+function Inicio({ isLoggedIn, Login, Logout, bruxinhos }) {
+  return isLoggedIn === true ? (
+    <header>
+      <h1>Preparativos para o Torneio tribruxo</h1>
+      <p>Aperte no botão a seguir para selecionar 3 oponentes!</p>
+      <button onClick={Login}>Selecionar os 3 oponentes!</button>
+    </header>
+  ) : (
+    <Oponentes
+      bruxinhos={bruxinhos}
+      isLoggedIn={isLoggedIn}
+      Login={Login}
+      Logout={Logout}
+    />
+  );
+}
+
+export default Inicio;
