@@ -55,9 +55,7 @@ function Oponentes({ isLoggedIn, Login, Logout, bruxinhos }) {
             </section>
           ))}
       </section>
-      <button onClick={randomThree}>
-        Não está satisfeito? Selecione novamente!
-      </button>
+      <button onClick={randomThree}>Não agradou? Selecione novamente!</button>
     </main>
   ) : (
     <Inicio
