@@ -1,4 +1,5 @@
 import "./../styles.css";
+
 import Oponentes from "./../Oponentes";
 
 function Inicio({ isLoggedIn, Login, Logout, bruxinhos }) {
@@ -14,6 +15,8 @@ function Inicio({ isLoggedIn, Login, Logout, bruxinhos }) {
       isLoggedIn={isLoggedIn}
       Login={Login}
       Logout={Logout}
+      // random3={random3}
+      // randomThree={randomThree}
     />
   );
 }
