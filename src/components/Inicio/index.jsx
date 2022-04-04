@@ -7,7 +7,7 @@ function Inicio({ isLoggedIn, Login, Logout, bruxinhos }) {
     <header>
       <h1>Preparativos para o Torneio tribruxo</h1>
       <p>Aperte no botão a seguir para selecionar 3 oponentes!</p>
-      <button onClick={Login}>Selecionar os 3 oponentes!</button>
+      <button onClick={Login}>Selecione os 3 oponentes!</button>
     </header>
   ) : (
     <Oponentes
