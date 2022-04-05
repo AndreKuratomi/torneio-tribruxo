@@ -29,13 +29,13 @@ git init
 <h5>1. Fazer o clone do repositório <b>Kenziehub</b> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
 
 ```
-git clone https://github.com/AndreKuratomi/Kenziehub-.git
+git clone https://github.com/AndreKuratomi/torneio-tribruxo.git
 ```
 
 <p>Entrar na pasta criada:</p>
 
 ```
-cd Kenziehub
+cd torneio-tribruxo
 ```
 
 <p>Instalar as dependências:</p>
