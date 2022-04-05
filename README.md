@@ -12,7 +12,7 @@
 <br>
 Link deploy vercel:
 
-https://kenziehub-fawn.vercel.app/
+https://torneio-tribruxo-iota.vercel.app/
 
 # Instalação
 
@@ -66,7 +66,7 @@ yarn start
 
 <p>Ou podemos utilizar o link do deploy Vercel a seguir:</p>
 
-https://kenziehub-fawn.vercel.app/
+https://torneio-tribruxo-iota.vercel.app/
 
 
 # Termos de uso
